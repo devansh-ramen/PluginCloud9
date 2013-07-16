@@ -7,12 +7,12 @@
     ext = require('core/ext');
     util = require('core/util');
     editors = require('ext/editors/editors');
-    markup = require('./livecoffee.xml.js');
-    menus = require("ext/menus/menus");
+    markup = require('./pluginComment.xml.js'); //important
+    menus = require("ext/menus/menus"); //important
     commands = require("ext/commands/commands");
     CoffeeScript = require('./vendor/coffeescript.js');
     lineMatching = require('./vendor/cs_js_source_mapping.js');
-    css = require("./livecoffee.css.js");
+    css = require("./pluginComment.css.js"); //important
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
     CSS_CLASS_NAME = "livecoffee-highlight";
@@ -48,7 +48,7 @@
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
-        this.nodes.push(menus.addItemByPath("Edit/Add Comments", new apf.item({ //Menu bar name 
+        this.nodes.push(menus.addItemByPath("Edit/Add Comments", new apf.item({ //adding an option to the Top Menu 
           command: "livecoffee"
         }), MENU_ENTRY_POSITION));
         this.hotitems['livecoffee'] = [this.nodes[1]];

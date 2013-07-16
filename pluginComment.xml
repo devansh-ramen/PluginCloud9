@@ -1,0 +1,62 @@
+<a:application xmlns:a="http://ajax.org/2005/aml">
+    <a:window
+      id = "liveCoffeeOutput"
+      title = "Title window, Add Comments (change in file livecoffee.xml)"  
+      center = "true"
+      modal = "false"
+      buttons = "close"
+      kbclose = "true"
+      width = "800"
+      height = "500">
+        <a:tab id="liveCoffeeTabs" height="415">
+            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test"> <!-- First Tab title-->
+                <a:codeeditor
+                    id="liveCoffeeCodeOutput"
+                    flex="1"
+                    realtime="true"
+                    border="0"
+                    showprintmargin="false"
+                    printmargincolumn="0"
+                    width="780"
+                    height="340" />
+                    <a:divider />
+                    <a:hbox pack="start" padding="5" edge="10 10 5 10">
+                        <a:label for="liveCoffeeOptMatchLines">Add Comment Test</a:label>
+                        <a:checkbox id="liveCoffeeOptMatchLines" />
+                        
+                        <a:label for="liveCoffeeOptCompileBare">test</a:label>
+                        <a:checkbox id="liveCoffeeOptCompileBare" />
+                        
+                        <a:label for="liveCoffeeOptCompileNodes">Compile Nodes?</a:label>
+                        <a:checkbox id="liveCoffeeOptCompileNodes" />
+                        
+                        <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>
+                        <a:checkbox id="liveCoffeeOptCompileTokens" />
+                    </a:hbox>
+            </a:page>
+            <a:page id="liveCoffeeNodes" caption="View Comments"> <!-- second Tab title-->
+                <a:textarea
+                    id="liveCoffeeNodeOutput"
+                    flex="1"
+                    realtime="true"
+                    border="0"
+                    showprintmargin="false"
+                    printmargincolumn="0"
+                    width="780"
+                    height="350" />
+            </a:page>
+            <a:page id="liveCoffeeTokens" caption="Delete Comments"> <!-- third Tab title-->
+                <a:textarea
+                    id="liveCoffeeTokenOutput"
+                    flex="1"
+                    realtime="true"
+                    border="0"
+                    showprintmargin="false"
+                    printmargincolumn="0"
+                    width="780"
+                    height="350" />
+            </a:page>
+        </a:tab>
+        <a:button onclick="require('core/ext').extLut['ext/livecoffee/livecoffee'].closeCodeOutput()">Close</a:button>
+    </a:window>
+</a:application>
