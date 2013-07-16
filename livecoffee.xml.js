@@ -3,7 +3,7 @@ define(function() {
 return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
-'      title = "LiveCoffee"\n' +
+'      title = "Edit Menu Plugin Name test livecoffee.xml.js:title"\n' +
 '      center = "true"\n' +
 '      modal = "false"\n' +
 '      buttons = "close"\n' +

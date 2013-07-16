@@ -1,7 +1,7 @@
 <a:application xmlns:a="http://ajax.org/2005/aml">
     <a:window
       id = "liveCoffeeOutput"
-      title = "LiveCoffee"
+      title = "Edit Menu Plugin Name test livecoffee.xml:title"
       center = "true"
       modal = "false"
       buttons = "close"
@@ -21,10 +21,10 @@
                     height="340" />
                     <a:divider />
                     <a:hbox pack="start" padding="5" edge="10 10 5 10">
-                        <a:label for="liveCoffeeOptMatchLines">Approx. Line Match</a:label>
+                        <a:label for="liveCoffeeOptMatchLines">Add Comment Test</a:label>
                         <a:checkbox id="liveCoffeeOptMatchLines" />
                         
-                        <a:label for="liveCoffeeOptCompileBare">Compile Bare?</a:label>
+                        <a:label for="liveCoffeeOptCompileBare">test</a:label>
                         <a:checkbox id="liveCoffeeOptCompileBare" />
                         
                         <a:label for="liveCoffeeOptCompileNodes">Compile Nodes?</a:label>
