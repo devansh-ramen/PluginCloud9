@@ -19,7 +19,7 @@
     OPEN_FILE_TIMEOUT = 150;
     OPEN_LIVECOFFEE_TIMEOUT = 70;
     return module.exports = ext.register('ext/livecoffee/livecoffee', {
-      name: 'Add Comments', //MENU ITEM NAME 
+      name: 'LiveCoffee',
       dev: 'Tane Piper',
       type: ext.GENERAL,
       alone: true,
@@ -48,7 +48,7 @@
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
-        this.nodes.push(menus.addItemByPath("Edit/Add Comments", new apf.item({
+        this.nodes.push(menus.addItemByPath("Edit/LiveCoffee", new apf.item({
           command: "livecoffee"
         }), MENU_ENTRY_POSITION));
         this.hotitems['livecoffee'] = [this.nodes[1]];
