@@ -1,7 +1,7 @@
 <a:application xmlns:a="http://ajax.org/2005/aml">
     <a:window
       id = "liveCoffeeOutput"
-      title = "Edit Menu Plugin Name test livecoffee.xml:title"
+      title = "Title window, Add Comments (change in file livecoffee.xml)"  
       center = "true"
       modal = "false"
       buttons = "close"
@@ -9,7 +9,7 @@
       width = "800"
       height = "500">
         <a:tab id="liveCoffeeTabs" height="415">
-            <a:page id="liveCoffeeCoffeeScript" caption="CoffeeScript Output">
+            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test"> <!-- First Tab title-->
                 <a:codeeditor
                     id="liveCoffeeCodeOutput"
                     flex="1"
@@ -34,7 +34,7 @@
                         <a:checkbox id="liveCoffeeOptCompileTokens" />
                     </a:hbox>
             </a:page>
-            <a:page id="liveCoffeeNodes" caption="Nodes">
+            <a:page id="liveCoffeeNodes" caption="View Comments"> <!-- second Tab title-->
                 <a:textarea
                     id="liveCoffeeNodeOutput"
                     flex="1"
@@ -45,7 +45,7 @@
                     width="780"
                     height="350" />
             </a:page>
-            <a:page id="liveCoffeeTokens" caption="Tokens">
+            <a:page id="liveCoffeeTokens" caption="Delete Comments"> <!-- third Tab title-->
                 <a:textarea
                     id="liveCoffeeTokenOutput"
                     flex="1"
