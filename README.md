@@ -1,6 +1,6 @@
 https://raw.github.com/2vansh/PluginCloud9/master/cloud9-livecoffee-ext.js
 
-Cloud9 Plugin Add Comments (not ready)
+Cloud9 Plugin (not ready)
 ==================================
 
 To install
