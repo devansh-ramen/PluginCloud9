@@ -48,7 +48,7 @@
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
-        this.nodes.push(menus.addItemByPath("Edit/LiveCoffee", new apf.item({
+        this.nodes.push(menus.addItemByPath("Edit/Add Comments", new apf.item({     //MENU ITEM NAME 
           command: "livecoffee"
         }), MENU_ENTRY_POSITION));
         this.hotitems['livecoffee'] = [this.nodes[1]];
