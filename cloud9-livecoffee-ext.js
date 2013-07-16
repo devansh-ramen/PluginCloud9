@@ -19,7 +19,7 @@
     OPEN_FILE_TIMEOUT = 150;
     OPEN_LIVECOFFEE_TIMEOUT = 70;
     return module.exports = ext.register('ext/livecoffee/livecoffee', {
-      name: 'LiveCoffee',
+      name: 'Add Comments',
       dev: 'Tane Piper',
       type: ext.GENERAL,
       alone: true,
