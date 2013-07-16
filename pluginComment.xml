@@ -1,7 +1,7 @@
 <a:application xmlns:a="http://ajax.org/2005/aml">
     <a:window
       id = "liveCoffeeOutput"
-      title = "Title window, Add Comments (change in file livecoffee.xml)"  
+      title = "Title window, Add Comments (change in file pluginComment.xml)"  
       center = "true"
       modal = "false"
       buttons = "close"

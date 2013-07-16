@@ -20,7 +20,7 @@
     OPEN_LIVECOFFEE_TIMEOUT = 70;
     return module.exports = ext.register('ext/livecoffee/livecoffee', {
       name: 'Comment Plugin',
-      dev: 'Tane Piper',
+      dev: 'Devansh',
       type: ext.GENERAL,
       alone: true,
       markup: markup,

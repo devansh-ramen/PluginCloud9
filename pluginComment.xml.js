@@ -3,7 +3,7 @@ define(function() {
 return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
-'      title = "Title window, Add Comments (change in file livecoffee.xml.js)"\n' +
+'      title = "Title window, Add Comments (change in file pluginComment.xml.js)"\n' +
 '      center = "true"\n' +
 '      modal = "false"\n' +
 '      buttons = "close"\n' +
