@@ -280,12 +280,12 @@
     //    this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
        // liveCoffeeCodeOutput.syntax = 'javascript';
       //  this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
-      //  this.liveCoffeeOutput = liveCoffeeOutput;
+        this.liveCoffeeOutput = liveCoffeeOutput;
        // liveCoffeeNodes.disable();
         this.liveCoffeeNodes = liveCoffeeNodes;
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
         //liveCoffeeTokens.disable();
-     //   this.liveCoffeeTokens = liveCoffeeTokens;
+        this.liveCoffeeTokens = liveCoffeeTokens;
       //  this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
       enable: function() {
