@@ -155,7 +155,7 @@
         matchingBlock = this.getMatchingBlockFromCoffee();
         this.adjustLiveCoffeeCursor(matchingBlock);
         return this.decorateBlocks(matchingBlock);
-      },*/
+      },
       highlightBlockFromJS: function(line) {
         var matchingBlock;
         if (line == null) {
@@ -236,7 +236,7 @@
           _results2.push(this.getAceEditor().renderer.addGutterDecoration(coffeeLineNumber, CSS_CLASS_NAME));
         }
         return _results2;
-      },
+      },*/
       getAceEditor: function() {
         var aceEditor, editor;
         editor = editors.currentEditor;
