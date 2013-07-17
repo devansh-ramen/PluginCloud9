@@ -3,7 +3,7 @@ define(function() {
 return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
-'      title = "Title window, Add Comments (change in file pluginComment.xml.js)"\n' +
+'      title = "Cloud9 Add Comments "\n' +
 '      center = "true"\n' +
 '      modal = "false"\n' +
 '      buttons = "close"\n' +
@@ -26,7 +26,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:label for="liveCoffeeOptMatchLines">Add Comment Test</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptMatchLines" />\n' +
 '                        \n' +
-'                        <a:label for="liveCoffeeOptCompileBare">Compile Bare?</a:label>\n' +
+/*'                        <a:label for="liveCoffeeOptCompileBare">Compile Bare?</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileBare" />\n' +
 '                        \n' +
 '                        <a:label for="liveCoffeeOptCompileNodes">Compile Nodes?</a:label>\n' +
@@ -34,9 +34,9 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        \n' +
 '                        <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileTokens" />\n' +
-'                    </a:hbox>\n' +
+*/'                    </a:hbox>\n' +
 '            </a:page>\n' +
-'            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
+/*'            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeNodeOutput"\n' +
 '                    flex="1"\n' +
@@ -58,8 +58,9 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    width="780"\n' +
 '                    height="350" />\n' +
 '            </a:page>\n' +
-'        </a:tab>\n' +
-'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
+*/'        </a:tab>\n' +
+'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Save</a:button>\n' +
+'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Cancel</a:button>\n' +
 '    </a:window>\n' +
 '</a:application>\n' +
 '';});

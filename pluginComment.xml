@@ -23,7 +23,7 @@
                     <a:hbox pack="start" padding="5" edge="10 10 5 10">
                         <a:label for="liveCoffeeOptMatchLines">Add Comment Test</a:label>
                         <a:checkbox id="liveCoffeeOptMatchLines" />
-                        
+                  <!--      
                         <a:label for="liveCoffeeOptCompileBare">test</a:label>
                         <a:checkbox id="liveCoffeeOptCompileBare" />
                         
@@ -31,7 +31,7 @@
                         <a:checkbox id="liveCoffeeOptCompileNodes" />
                         
                         <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>
-                        <a:checkbox id="liveCoffeeOptCompileTokens" />
+                        <a:checkbox id="liveCoffeeOptCompileTokens" /> -->
                     </a:hbox>
             </a:page>
             <a:page id="liveCoffeeNodes" caption="View Comments"> <!-- second Tab title-->
@@ -58,5 +58,6 @@
             </a:page>
         </a:tab>
         <a:button onclick="require('core/ext').extLut['ext/livecoffee/livecoffee'].closeCodeOutput()">Close</a:button>
+        <a:button onclick="require('core/ext').extLut['ext/livecoffee/livecoffee'].closeCodeOutput()">Save</a:button>
     </a:window>
 </a:application>
