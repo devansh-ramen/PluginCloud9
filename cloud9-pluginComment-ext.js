@@ -81,7 +81,7 @@
          // });
         }
       },
-      compile: function() { /*
+     /* compile: function() { 
         var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
         editor = editors.currentEditor;
         aceEditor = editor.amlEditor.$editor;
@@ -107,8 +107,8 @@
           }
         } catch (exp) {
           this.liveCoffeeCodeOutput.setValue(exp.message);
-        } */
-      },
+        } 
+      },*/
       convertMatchingLines: function(matchingLines) {
         var block, current_line, i, matchingBlocks, next_line, _i, _ref;
         matchingBlocks = {
