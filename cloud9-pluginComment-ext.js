@@ -80,8 +80,8 @@
            // }
          // });
         }
-      },
-      compile: function() {
+      },/*
+      compile: function() { 
         var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
         editor = editors.currentEditor;
         aceEditor = editor.amlEditor.$editor;
@@ -320,7 +320,7 @@
         this.liveCoffeeOptMatchLines.uncheck();
         this.removeHighlightedBlocks();
         return this.liveCoffeeOutput.hide();
-      },
+      }, */
       show: function(options) {
         var line,
           _this = this;
