@@ -19,7 +19,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    border="0"\n' +
 '                    showprintmargin="false"\n' +
 '                    printmargincolumn="0"\n' +
-'                    width="780"\n' +
+'                    width="750"\n' +
 '                    height="350" />\n' +
 /*'                <a:codeeditor\n' +
 '                    id="liveCoffeeCodeOutput"\n' +

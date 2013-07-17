@@ -288,7 +288,7 @@
       //  this.liveCoffeeTokens = liveCoffeeTokens;
       //  this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
-      enable: function() {
+     /* enable: function() {
         this.nodes.each(function(item) {
           return item.enable();
         });
@@ -315,7 +315,7 @@
         this.liveCoffeeNodeOutput.destroy(true, true);
         this.liveCoffeeTokens.destroy(true, true);
         this.liveCoffeeTokenOutput.destroy(true, true);
-      },
+      }, */
       closeCodeOutput: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
        // this.removeHighlightedBlocks();
