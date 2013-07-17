@@ -3,13 +3,13 @@ define(function() {
 return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
-'      title = "Title window, Add Comments (change in file pluginComment.xml.js)"\n' +
+'      title = "Add Comments"\n' +
 '      center = "true"\n' +
 '      modal = "false"\n' +
 '      buttons = "close"\n' +
 '      kbclose = "true"\n' +
 '      width = "800"\n' +
-'      height = "500">\n' +
+'      height = "600">\n' +
 '        <a:tab id="liveCoffeeTabs" height="415">\n' +
 '            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:codeeditor\n' +
