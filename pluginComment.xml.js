@@ -9,7 +9,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      buttons = "close"\n' +
 '      kbclose = "true"\n' +
 '      width = "800"\n' +
-'      height = "500">\n' +
+'      height = "420">\n' +
 //'	   <a:divider />\n' +
 '        <a:tab id="liveCoffeeTabs" height="330">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
