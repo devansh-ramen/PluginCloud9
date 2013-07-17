@@ -22,7 +22,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    width="780"\n' +
 '                    height="340" />\n' +
 '                    <a:divider />\n' +
-/*'                    <a:hbox pack="start" padding="5" edge="10 10 5 10">\n' +
+'                    <a:hbox pack="start" padding="5" edge="10 10 5 10">\n' +
 '                        <a:label for="liveCoffeeOptMatchLines">Add Comment Test</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptMatchLines" />\n' +
 '                        \n' +
@@ -35,7 +35,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileTokens" />\n' +
 '                    </a:hbox>\n' +
-*/'            </a:page>\n' +
+'            </a:page>\n' +
 '            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeNodeOutput"\n' +
