@@ -45,7 +45,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileTokens" />\n' +
 '                    </a:hbox>\n' + */
 '            </a:page>\n' +
-'            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
+/*'            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeNodeOutput"\n' +
 '                    flex="1"\n' +
@@ -66,7 +66,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    printmargincolumn="0"\n' +
 '                    width="780"\n' +
 '                    height="350" />\n' +
-'            </a:page>\n' +
+'            </a:page>\n' + */
 '        </a:tab>\n' +
 '        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Save</a:button>\n' +
 '        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
