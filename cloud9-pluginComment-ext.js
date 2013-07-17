@@ -56,13 +56,13 @@
           return _this.show(options);
         });
       },
-      livecoffee: function() {
+      livecoffee: function() {  /*  
         var aceEditor, editor, liveCoffeeEditor,
           _this = this;
         ext.initExtension(this);
-        //this.compile();
+        this.compile();
         this.liveCoffeeOutput.show();
-     /*   if (this.liveCoffeeOutput.visible) {
+    if (this.liveCoffeeOutput.visible) {
           editor = editors.currentEditor;
           aceEditor = editor.amlEditor.$editor;
           liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
@@ -326,7 +326,7 @@
           _this = this;
         line = options.line - 1;
         return setTimeout((function() {
-          //return _this.startLiveCoffee(line, options.showJS);
+          return _this.startLiveCoffee(line, options.showJS);
         }), OPEN_FILE_TIMEOUT);
       },
       startLiveCoffee: function(line, showJS) {
@@ -337,7 +337,7 @@
         } else {
           this.livecoffee();
         }
-       // this.liveCoffeeOptMatchLines.check();
+        this.liveCoffeeOptMatchLines.check();
         setTimeout((function() {
           return _this.highlightBlockFromJS(line);
         }), OPEN_LIVECOFFEE_TIMEOUT);
