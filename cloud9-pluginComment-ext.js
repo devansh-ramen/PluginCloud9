@@ -277,15 +277,15 @@
             return _this.liveCoffeeTokens.disable();
           }
         });*/
-        this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
+    //    this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
        // liveCoffeeCodeOutput.syntax = 'javascript';
-        this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
-        this.liveCoffeeOutput = liveCoffeeOutput;
+      //  this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
+      //  this.liveCoffeeOutput = liveCoffeeOutput;
        // liveCoffeeNodes.disable();
         this.liveCoffeeNodes = liveCoffeeNodes;
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
         //liveCoffeeTokens.disable();
-        this.liveCoffeeTokens = liveCoffeeTokens;
+     //   this.liveCoffeeTokens = liveCoffeeTokens;
       //  this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
       enable: function() {
