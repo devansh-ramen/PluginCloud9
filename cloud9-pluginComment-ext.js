@@ -57,7 +57,7 @@
         });
       },
       livecoffee: function() {
-  /*      var aceEditor, editor, liveCoffeeEditor,
+        var aceEditor, editor, liveCoffeeEditor,
           _this = this;
         ext.initExtension(this);
         this.compile();
@@ -80,9 +80,9 @@
             }
           });
         }
-    */},
+      },
       compile: function() {
-   /*     var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
+        var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
         editor = editors.currentEditor;
         aceEditor = editor.amlEditor.$editor;
         doc = editor.getDocument();
@@ -107,9 +107,9 @@
           }
         } catch (exp) {
           this.liveCoffeeCodeOutput.setValue(exp.message);
-        }*/
+        }
       },
-      convertMatchingLines: function(matchingLines) { /*
+      convertMatchingLines: function(matchingLines) {
         var block, current_line, i, matchingBlocks, next_line, _i, _ref;
         matchingBlocks = {
           fromCoffee: {},
@@ -121,9 +121,9 @@
           block = this.createBlock(current_line, next_line);
           matchingBlocks = this.mapLinesToBlocks(block, matchingBlocks);
         }
-        return matchingBlocks; */
+        return matchingBlocks;
       },
-      createBlock: function(currentLine, nextLine) { /*
+      createBlock: function(currentLine, nextLine) {
         var jsEnd, jsStart;
         if (currentLine[1] === nextLine[1]) {
           jsStart = currentLine[1] - 1;
@@ -137,9 +137,9 @@
           coffee_end: nextLine[0] - 1,
           js_start: jsStart,
           js_end: jsEnd
-        }; */
+        };
       },
-      mapLinesToBlocks: function(block, matchingBlocks) { /*
+      mapLinesToBlocks: function(block, matchingBlocks) {
         var coffeeLine, jsLine, _i, _j, _ref, _ref1, _ref2, _ref3;
         for (coffeeLine = _i = _ref = block.coffee_start, _ref1 = block.coffee_end; _ref <= _ref1 ? _i <= _ref1 : _i >= _ref1; coffeeLine = _ref <= _ref1 ? ++_i : --_i) {
           matchingBlocks.fromCoffee[coffeeLine] = block;
@@ -175,9 +175,9 @@
           matchingBlock = this.getMatchingBlockFromJS();
         }
         this.adjustEditorCursor(matchingBlock);
-        return this.decorateBlocks(matchingBlock); */
+        return this.decorateBlocks(matchingBlock);
       },
-      removeHighlightedBlocks: function() { /*
+      removeHighlightedBlocks: function() {
         var coffeeLineNumber, jsLineNumber, _i, _j, _len, _len1, _ref, _ref1, _results;
         if (this.decoratedLines != null) {
           _ref = this.decoratedLines.js;
@@ -192,25 +192,25 @@
             _results.push(this.getAceEditor().renderer.removeGutterDecoration(coffeeLineNumber, CSS_CLASS_NAME));
           }
           return _results;
-        } */
+        }
       },
-      getMatchingBlockFromCoffee: function() { /*
+      getMatchingBlockFromCoffee: function() {
         var currentLine, matchingBlock;
         currentLine = this.getAceEditor().getCursorPosition().row;
-        return matchingBlock = this.matchingBlocks.fromCoffee[currentLine]; */
+        return matchingBlock = this.matchingBlocks.fromCoffee[currentLine];
       },
-      getMatchingBlockFromJS: function() { /*
+      getMatchingBlockFromJS: function() {
         var currentLine, matchingBlock;
         currentLine = this.getLiveCoffeeEditor().getCursorPosition().row;
-        return matchingBlock = this.matchingBlocks.fromJS[currentLine]; */
+        return matchingBlock = this.matchingBlocks.fromJS[currentLine];
       },
-      adjustLiveCoffeeCursor: function(matchingBlock) { /*
-        return this.getLiveCoffeeEditor().gotoLine(matchingBlock.js_start + 1); */
+      adjustLiveCoffeeCursor: function(matchingBlock) {
+        return this.getLiveCoffeeEditor().gotoLine(matchingBlock.js_start + 1);
       },
-      adjustEditorCursor: function(matchingBlock) { /*
-        return this.getAceEditor().gotoLine(matchingBlock.coffee_start + 1); */
+      adjustEditorCursor: function(matchingBlock) {
+        return this.getAceEditor().gotoLine(matchingBlock.coffee_start + 1);
       },
-      decorateBlocks: function(matchingBlock) { /*
+      decorateBlocks: function(matchingBlock) {
         var coffeeLineNumber, jsLineNumber, _i, _j, _k, _l, _len, _len1, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _results, _results1, _results2;
         this.decoratedLines = {
           js: (function() {
@@ -235,17 +235,17 @@
           coffeeLineNumber = _ref5[_l];
           _results2.push(this.getAceEditor().renderer.addGutterDecoration(coffeeLineNumber, CSS_CLASS_NAME));
         }
-        return _results2; */
+        return _results2;
       },
-      getAceEditor: function() { /*
+      getAceEditor: function() {
         var aceEditor, editor;
         editor = editors.currentEditor;
-        return aceEditor = editor.amlEditor.$editor; */
+        return aceEditor = editor.amlEditor.$editor;
       },
-      getLiveCoffeeEditor: function() { /*
-        return this.liveCoffeeCodeOutput.$editor; */
+      getLiveCoffeeEditor: function() {
+        return this.liveCoffeeCodeOutput.$editor;
       },
-      init: function(amlNode) { /*
+      init: function(amlNode) {
         var _this = this;
         apf.importCssString(css);
         liveCoffeeOptMatchLines.addEventListener('click', function() {
@@ -286,21 +286,21 @@
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
         liveCoffeeTokens.disable();
         this.liveCoffeeTokens = liveCoffeeTokens;
-        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput; */
+        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
-      enable: function() { /*
+      enable: function() {
         this.nodes.each(function(item) {
           return item.enable();
         });
-        return this.disabled = false; */
+        return this.disabled = false;
       },
-      disable: function() { /*
+      disable: function() {
         this.nodes.each(function(item) {
-          return item.disable(); 
+          return item.disable();
         });
-        return this.disabled = true; */
+        return this.disabled = true;
       },
-      destroy: function() { 
+      destroy: function() {
         this.nodes.each(function(item) {
           item.destroy(true, true);
         });
