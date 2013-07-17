@@ -11,7 +11,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      width = "800"\n' +
 '      height = "550">\n' +
 '        <a:tab id="liveCoffeeTabs" height="415">\n' +
-'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
+//'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
 '                    flex="1"\n' +
@@ -44,7 +44,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileTokens" />\n' +
 '                    </a:hbox>\n' + */
-'            </a:page>\n' +
+//'            </a:page>\n' +
 /*'            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeNodeOutput"\n' +
@@ -68,7 +68,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    height="350" />\n' +
 '            </a:page>\n' + */
 '        </a:tab>\n' +
-'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Save</a:button>\n' +
+'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
 '        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
 '    </a:window>\n' +
 '</a:application>\n' +

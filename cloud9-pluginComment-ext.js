@@ -321,6 +321,11 @@
        // this.removeHighlightedBlocks();
         return this.liveCoffeeOutput.hide();
       },
+      saveComment: function() {
+      //  this.liveCoffeeOptMatchLines.uncheck();
+       // this.removeHighlightedBlocks();
+        alert('Save comment function not ready');
+      },
       show: function(options) {
         var line,
           _this = this;
