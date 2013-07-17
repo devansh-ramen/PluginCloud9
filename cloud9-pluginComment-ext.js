@@ -57,7 +57,7 @@
         });
       },
       livecoffee: function() {
-        var aceEditor, editor, liveCoffeeEditor,
+  /*      var aceEditor, editor, liveCoffeeEditor,
           _this = this;
         ext.initExtension(this);
         this.compile();
@@ -80,9 +80,9 @@
             }
           });
         }
-      },
+    */},
       compile: function() {
-        var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
+   /*     var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
         editor = editors.currentEditor;
         aceEditor = editor.amlEditor.$editor;
         doc = editor.getDocument();
@@ -107,7 +107,7 @@
           }
         } catch (exp) {
           this.liveCoffeeCodeOutput.setValue(exp.message);
-        }
+        }*/
       },
       convertMatchingLines: function(matchingLines) {
         var block, current_line, i, matchingBlocks, next_line, _i, _ref;
