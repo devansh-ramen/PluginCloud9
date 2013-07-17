@@ -247,7 +247,7 @@
       },
       init: function(amlNode) {
         var _this = this;
-        apf.importCssString(css); /*
+        apf.importCssString(css); 
         liveCoffeeOptMatchLines.addEventListener('click', function() {
           if (liveCoffeeOptMatchLines.checked) {
             return _this.highlightBlockFromCoffee();
@@ -286,7 +286,7 @@
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
         liveCoffeeTokens.disable();
         this.liveCoffeeTokens = liveCoffeeTokens;
-        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput; */
+        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
       enable: function() {
         this.nodes.each(function(item) {
