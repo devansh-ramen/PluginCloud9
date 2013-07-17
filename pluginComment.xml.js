@@ -11,7 +11,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      width = "800"\n' +
 '      height = "500">\n' +
 //'	   <a:divider />\n' +
-'        <a:tab id="liveCoffeeTabs" height="400">\n' +
+'        <a:tab id="liveCoffeeTabs" height="330">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
