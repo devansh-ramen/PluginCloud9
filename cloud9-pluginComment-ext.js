@@ -276,17 +276,17 @@
           } else {
             return _this.liveCoffeeTokens.disable();
           }
-        });
+        });*/
         this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
-        liveCoffeeCodeOutput.syntax = 'javascript';
+       // liveCoffeeCodeOutput.syntax = 'javascript';
         this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
         this.liveCoffeeOutput = liveCoffeeOutput;
-        liveCoffeeNodes.disable();
+       // liveCoffeeNodes.disable();
         this.liveCoffeeNodes = liveCoffeeNodes;
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
-        liveCoffeeTokens.disable();
+        //liveCoffeeTokens.disable();
         this.liveCoffeeTokens = liveCoffeeTokens;
-        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;*/
+      //  this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
       enable: function() {
         this.nodes.each(function(item) {
