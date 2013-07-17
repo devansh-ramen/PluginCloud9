@@ -66,19 +66,19 @@
           editor = editors.currentEditor;
           aceEditor = editor.amlEditor.$editor;
           liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
-         // editor.ceEditor.addEventListener('keyup', function() {
-          //  return _this.compile();
-        //  });
-        //  aceEditor.addEventListener('click', function() {
-          //  if (_this.liveCoffeeOptMatchLines.checked) {
-              //return _this.highlightBlockFromCoffee();
-         //   }
-        //  });
-          //liveCoffeeEditor.addEventListener('click', function() {
-           // if (_this.liveCoffeeOptMatchLines.checked) {
-             // return _this.highlightBlockFromJS();
-          //  }
-         // });
+          editor.ceEditor.addEventListener('keyup', function() {
+            return _this.compile();
+          });
+          aceEditor.addEventListener('click', function() {
+            if (_this.liveCoffeeOptMatchLines.checked) {
+              return _this.highlightBlockFromCoffee();
+            }
+         });
+          liveCoffeeEditor.addEventListener('click', function() {
+            if (_this.liveCoffeeOptMatchLines.checked) {
+              return _this.highlightBlockFromJS();
+            }
+          });
         }
       },
       compile: function() {
