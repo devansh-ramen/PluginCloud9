@@ -155,7 +155,7 @@
         matchingBlock = this.getMatchingBlockFromCoffee();
         this.adjustLiveCoffeeCursor(matchingBlock);
         return this.decorateBlocks(matchingBlock);
-      },
+      },*/
       highlightBlockFromJS: function(line) {
         var matchingBlock;
         if (line == null) {
@@ -320,7 +320,7 @@
         this.liveCoffeeOptMatchLines.uncheck();
         this.removeHighlightedBlocks();
         return this.liveCoffeeOutput.hide();
-      },*/
+      },
       show: function(options) {
         var line,
           _this = this;
