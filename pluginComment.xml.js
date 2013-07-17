@@ -12,7 +12,16 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      height = "550">\n' +
 '        <a:tab id="liveCoffeeTabs" height="415">\n' +
 '            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
-'                <a:codeeditor\n' +
+'                <a:textarea\n' +
+'                    id="liveCoffeeCodeOutput"\n' +
+'                    flex="1"\n' +
+'                    realtime="true"\n' +
+'                    border="0"\n' +
+'                    showprintmargin="false"\n' +
+'                    printmargincolumn="0"\n' +
+'                    width="780"\n' +
+'                    height="350" />\n' +
+/*'                <a:codeeditor\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
 '                    flex="1"\n' +
 '                    realtime="true"\n' +
@@ -34,7 +43,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        \n' +
 '                        <a:label for="liveCoffeeOptCompileTokens">Compile Tokens?</a:label>\n' +
 '                        <a:checkbox id="liveCoffeeOptCompileTokens" />\n' +
-'                    </a:hbox>\n' +
+'                    </a:hbox>\n' + */
 '            </a:page>\n' +
 '            <a:page id="liveCoffeeNodes" caption="View Comments">\n' + //second Tab title
 '                <a:textarea\n' +
