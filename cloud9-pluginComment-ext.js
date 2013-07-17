@@ -59,27 +59,27 @@
       livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
           _this = this;
-        ext.initExtension(this);
+       // ext.initExtension(this);
        // this.compile();
         this.liveCoffeeOutput.show();
         if (this.liveCoffeeOutput.visible) {
-          editor = editors.currentEditor;
-          aceEditor = editor.amlEditor.$editor;
-          liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
-          editor.ceEditor.addEventListener('keyup', function() {
+         // editor = editors.currentEditor;
+         // aceEditor = editor.amlEditor.$editor;
+        //  liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
+         // editor.ceEditor.addEventListener('keyup', function() {
           //  return _this.compile();
           });
-          aceEditor.addEventListener('click', function() {
-            if (_this.liveCoffeeOptMatchLines.checked) {
+        //  aceEditor.addEventListener('click', function() {
+          //  if (_this.liveCoffeeOptMatchLines.checked) {
               //return _this.highlightBlockFromCoffee();
-            }
-          });
-          liveCoffeeEditor.addEventListener('click', function() {
-            if (_this.liveCoffeeOptMatchLines.checked) {
+         //   }
+        //  });
+          //liveCoffeeEditor.addEventListener('click', function() {
+           // if (_this.liveCoffeeOptMatchLines.checked) {
              // return _this.highlightBlockFromJS();
-            }
-          });
-        }
+          //  }
+         // });
+        //}
       },
       compile: function() {
         var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
