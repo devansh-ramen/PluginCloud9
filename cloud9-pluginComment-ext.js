@@ -326,7 +326,7 @@
           _this = this;
         line = options.line - 1;
         return setTimeout((function() {
-          return _this.startLiveCoffee(line, options.showJS);
+          r//eturn _this.startLiveCoffee(line, options.showJS);
         }), OPEN_FILE_TIMEOUT);
       },
       startLiveCoffee: function(line, showJS) {
