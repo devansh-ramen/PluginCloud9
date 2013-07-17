@@ -63,7 +63,7 @@
        // this.compile();
         this.liveCoffeeOutput.show();
         if (this.liveCoffeeOutput.visible) {
-          editor = editors.currentEditor;
+         // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
          // liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
          // editor.ceEditor.addEventListener('keyup', function() {
