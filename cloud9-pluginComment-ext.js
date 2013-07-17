@@ -62,7 +62,7 @@
         ext.initExtension(this);
        // this.compile();
         this.liveCoffeeOutput.show();
-        if (this.liveCoffeeOutput.visible) {
+        //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
          // liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
@@ -79,7 +79,7 @@
              // return _this.highlightBlockFromJS();
            // }
          // });
-        }
+       // }
       },
      /* compile: function() { 
         var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
@@ -237,14 +237,14 @@
         }
         return _results2;
       },*/
-      getAceEditor: function() {
-        var aceEditor, editor;
-        editor = editors.currentEditor;
-        return aceEditor = editor.amlEditor.$editor;
-      },
-      getLiveCoffeeEditor: function() {
-        return this.liveCoffeeCodeOutput.$editor;
-      },
+    //  getAceEditor: function() {
+     //   var aceEditor, editor;
+     //   editor = editors.currentEditor;
+     //   return aceEditor = editor.amlEditor.$editor;
+     // },
+   //   getLiveCoffeeEditor: function() {
+  //      return this.liveCoffeeCodeOutput.$editor;
+    //  },
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); /*
@@ -326,7 +326,7 @@
           _this = this;
         line = options.line - 1;
         return setTimeout((function() {
-          r//eturn _this.startLiveCoffee(line, options.showJS);
+          //return _this.startLiveCoffee(line, options.showJS);
         }), OPEN_FILE_TIMEOUT);
       },
      /* startLiveCoffee: function(line, showJS) { 
