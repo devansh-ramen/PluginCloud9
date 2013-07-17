@@ -59,8 +59,8 @@
       livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
           _this = this;
-       // ext.initExtension(this);
-       // this.compile();
+        ext.initExtension(this);
+        this.compile();
         this.liveCoffeeOutput.show();
         if (this.liveCoffeeOutput.visible) {
           editor = editors.currentEditor;
