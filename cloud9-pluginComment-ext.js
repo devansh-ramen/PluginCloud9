@@ -276,7 +276,7 @@
           } else {
             return _this.liveCoffeeTokens.disable();
           }
-        });*/
+        });
         this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
         liveCoffeeCodeOutput.syntax = 'javascript';
         this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
@@ -286,7 +286,7 @@
         this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
         liveCoffeeTokens.disable();
         this.liveCoffeeTokens = liveCoffeeTokens;
-        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
+        this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;*/
       },
       enable: function() {
         this.nodes.each(function(item) {
