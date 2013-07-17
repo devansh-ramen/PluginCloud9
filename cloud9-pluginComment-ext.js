@@ -176,7 +176,7 @@
         }
         this.adjustEditorCursor(matchingBlock);
         return this.decorateBlocks(matchingBlock);
-      }, */
+      }, 
       removeHighlightedBlocks: function() {
         var coffeeLineNumber, jsLineNumber, _i, _j, _len, _len1, _ref, _ref1, _results;
         if (this.decoratedLines != null) {
@@ -193,7 +193,7 @@
           }
           return _results;
         }
-      }, /*
+      }, 
       getMatchingBlockFromCoffee: function() {
         var currentLine, matchingBlock;
         currentLine = this.getAceEditor().getCursorPosition().row;
@@ -247,7 +247,7 @@
       },
       init: function(amlNode) {
         var _this = this;
-        apf.importCssString(css); 
+        apf.importCssString(css); /*
         liveCoffeeOptMatchLines.addEventListener('click', function() {
           if (liveCoffeeOptMatchLines.checked) {
             return _this.highlightBlockFromCoffee();
@@ -276,7 +276,7 @@
           } else {
             return _this.liveCoffeeTokens.disable();
           }
-        });
+        });*/
         this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
         liveCoffeeCodeOutput.syntax = 'javascript';
         this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
