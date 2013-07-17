@@ -317,8 +317,8 @@
         this.liveCoffeeTokenOutput.destroy(true, true);
       },
       closeCodeOutput: function() {
-        this.liveCoffeeOptMatchLines.uncheck();
-        this.removeHighlightedBlocks();
+      //  this.liveCoffeeOptMatchLines.uncheck();
+       // this.removeHighlightedBlocks();
         return this.liveCoffeeOutput.hide();
       },
       show: function(options) {
@@ -329,7 +329,7 @@
           r//eturn _this.startLiveCoffee(line, options.showJS);
         }), OPEN_FILE_TIMEOUT);
       },
-      startLiveCoffee: function(line, showJS) { /*
+     /* startLiveCoffee: function(line, showJS) { 
         var _ref,
           _this = this;
         if ((_ref = this.liveCoffeeOutput) != null ? _ref.visible : void 0) {
@@ -343,8 +343,8 @@
         }), OPEN_LIVECOFFEE_TIMEOUT);
         if (!showJS) {
           return this.closeCodeOutput();
-        }*/
-      }
+        }
+      }*/
     });
   });
 
