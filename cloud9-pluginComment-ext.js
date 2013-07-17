@@ -108,7 +108,7 @@
         } catch (exp) {
           this.liveCoffeeCodeOutput.setValue(exp.message);
         } 
-      },*/
+      },
       convertMatchingLines: function(matchingLines) {
         var block, current_line, i, matchingBlocks, next_line, _i, _ref;
         matchingBlocks = {
@@ -122,7 +122,7 @@
           matchingBlocks = this.mapLinesToBlocks(block, matchingBlocks);
         }
         return matchingBlocks;
-      },
+      },*/
       createBlock: function(currentLine, nextLine) {
         var jsEnd, jsStart;
         if (currentLine[1] === nextLine[1]) {
