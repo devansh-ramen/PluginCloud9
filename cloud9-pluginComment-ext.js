@@ -62,10 +62,10 @@
        // ext.initExtension(this);
        // this.compile();
         this.liveCoffeeOutput.show();
-       // if (this.liveCoffeeOutput.visible) {
-         // editor = editors.currentEditor;
-         // aceEditor = editor.amlEditor.$editor;
-        //  liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
+        if (this.liveCoffeeOutput.visible) {
+          editor = editors.currentEditor;
+          aceEditor = editor.amlEditor.$editor;
+          liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
          // editor.ceEditor.addEventListener('keyup', function() {
           //  return _this.compile();
         //  });
@@ -79,7 +79,7 @@
              // return _this.highlightBlockFromJS();
           //  }
          // });
-        //}
+        }
       },
       compile: function() {
         var aceEditor, bare, compiledJS, doc, editor, matchingLines, value;
