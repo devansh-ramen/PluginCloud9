@@ -122,7 +122,7 @@
           matchingBlocks = this.mapLinesToBlocks(block, matchingBlocks);
         }
         return matchingBlocks;
-      },*/
+      },
       createBlock: function(currentLine, nextLine) {
         var jsEnd, jsStart;
         if (currentLine[1] === nextLine[1]) {
@@ -320,7 +320,7 @@
         this.liveCoffeeOptMatchLines.uncheck();
         this.removeHighlightedBlocks();
         return this.liveCoffeeOutput.hide();
-      },
+      },*/
       show: function(options) {
         var line,
           _this = this;
