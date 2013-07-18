@@ -78,6 +78,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '        </a:td>\n' +
 '        </a:tr>\n' +
 '        </a:table>\n' +
+'        </a:tab>\n' +
 '    </a:window>\n' +
 '</a:application>\n' +
 '';});
