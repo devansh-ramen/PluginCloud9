@@ -288,19 +288,19 @@
       //  this.liveCoffeeTokens = liveCoffeeTokens;
       //  this.liveCoffeeTokenOutput = liveCoffeeTokenOutput;
       },
-     /* enable: function() {
+      enable: function() {  /*
         this.nodes.each(function(item) {
           return item.enable();
         });
-        return this.disabled = false;
+        return this.disabled = false;  */
       },
-      disable: function() {
+      disable: function() {  /*
         this.nodes.each(function(item) {
           return item.disable();
         });
-        return this.disabled = true;
+        return this.disabled = true;  */
       },
-      destroy: function() {
+      destroy: function() { /*
         this.nodes.each(function(item) {
           item.destroy(true, true);
         });
@@ -314,8 +314,8 @@
         this.liveCoffeeNodes.destroy(true, true);
         this.liveCoffeeNodeOutput.destroy(true, true);
         this.liveCoffeeTokens.destroy(true, true);
-        this.liveCoffeeTokenOutput.destroy(true, true);
-      }, */
+        this.liveCoffeeTokenOutput.destroy(true, true);  */
+      }, 
       closeCodeOutput: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
        // this.removeHighlightedBlocks();
