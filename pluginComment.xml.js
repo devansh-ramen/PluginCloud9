@@ -70,10 +70,10 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '            </a:page>\n' + */
 //'                    <a:divider />\n' +
 //'                    <a:hbox pack="start" padding="5" edge="10 10 5 10">\n' +
-'        <a:button style="float: left;width:20px;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
+'        <a:button style="float: left;width:40%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
 //'        </a:td>\n' +
 //'        <a:td>\n' +
-'        <a:button style="float: left;width:20px;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
+'        <a:button style="float: right;width:40%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
 //'                    </a:hbox>\n' + */
 '        </a:tab>\n' +
 '    </a:window>\n' +
