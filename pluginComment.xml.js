@@ -8,10 +8,10 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      modal = "false"\n' +
 '      buttons = "close"\n' +
 '      kbclose = "true"\n' +
-'      width = "500"\n' +
+'      width = "400"\n' +
 '      height = "320">\n' +
 //'	   <a:divider />\n' +
-'        <a:tab id="liveCoffeeTabs" height="280">\n' +
+'        <a:tab id="liveCoffeeTabs" height="250">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
@@ -21,7 +21,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    showprintmargin="false"\n' +
 '                    printmargincolumn="0"\n' +
 '                    width="400"\n' +
-'                    height="250" />\n' +
+'                    height="220" />\n' +
 /*'                <a:codeeditor\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
 '                    flex="1"\n' +
