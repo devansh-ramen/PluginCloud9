@@ -68,16 +68,16 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                    width="780"\n' +
 '                    height="350" />\n' +
 '            </a:page>\n' + */
-//'        <a:table>\n' +
-//'        <a:tr>\n' +
-//'        <a:td>\n' +
-'        <a:button class="button" style="width:40%; min-width; min-height;" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
-//'        </a:td>\n' +
-//'        <a:td>\n' +
-'        <a:button style="width:40%;" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
-//'        </a:td>\n' +
-//'        </a:tr>\n' +
-//'        </a:table>\n' +
+'        <a:table>\n' +
+'        <a:tr>\n' +
+'        <a:td>\n' +
+'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
+'        </a:td>\n' +
+'        <a:td>\n' +
+'        <a:button onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
+'        </a:td>\n' +
+'        </a:tr>\n' +
+'        </a:table>\n' +
 '        </a:tab>\n' +
 '    </a:window>\n' +
 '</a:application>\n' +

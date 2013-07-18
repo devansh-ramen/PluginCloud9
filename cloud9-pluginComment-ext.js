@@ -15,7 +15,7 @@
     css = require("./pluginComment.css.js"); //important
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
-    //CSS_CLASS_NAME = "livecoffee-highlight";
+    CSS_CLASS_NAME = "livecoffee-highlight";
     OPEN_FILE_TIMEOUT = 150;
     OPEN_LIVECOFFEE_TIMEOUT = 70;
     return module.exports = ext.register('ext/livecoffee/livecoffee', {
