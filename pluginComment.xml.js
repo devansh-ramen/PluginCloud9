@@ -73,7 +73,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '        <a:button style="width:30%" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].saveComment()">Save</a:button>\n' +
 //'        </a:td>\n' +
 //'        <a:td>\n' +
-'        <a:button style="posistion:absolute;width:30%" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
+'        <a:button style="position:absolute;width:30%" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
 //'                    </a:hbox>\n' + */
 '        </a:tab>\n' +
 '    </a:window>\n' +
