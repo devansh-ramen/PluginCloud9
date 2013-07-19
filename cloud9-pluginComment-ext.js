@@ -78,11 +78,6 @@
         });
 
 
-
-
-
-
-
       },
       livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
