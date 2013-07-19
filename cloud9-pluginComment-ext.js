@@ -70,7 +70,7 @@
                     id : "pluginComment",
                     caption : "Add Comment",
                     command: "livecoffee"
-                }), mnuCtxEditorCut),
+                }), mnuCtxEditorCut)
               //  mnuCtxEditor.insertBefore(new apf.divider({
                //     visible : "{mnuCtxEditorRevisions.visible}"
                // }), mnuCtxEditorCut)
