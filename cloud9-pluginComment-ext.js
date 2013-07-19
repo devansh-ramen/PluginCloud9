@@ -55,6 +55,34 @@
         ide.addEventListener('livecoffee_show_file', function(options) {
           return _this.show(options);
         });
+
+
+        ide.addEventListener("init.ext/tabbehaviors/tabbehaviors", function() {
+            menus.addItemByPath("~", new apf.divider(), 2000, mnuContextTabs);
+            menus.addItemByPath("File Revision sHistory...", new apf.item({
+                command : "revisionpanel"
+            }), 2100, mnuContextTabs);
+        });
+
+        ide.addEventListener("init.ext/code/code", function() {
+            self.nodes.push(
+                mnuCtxEditor.insertBefore(new apf.item({
+                    id : "mnuCtxEditorRevisions",
+                    caption : "File Revision sHistory...",
+                    command: "revisionpanel"
+                }), mnuCtxEditorCut),
+                mnuCtxEditor.insertBefore(new apf.divider({
+                    visible : "{mnuCtxEditorRevisions.visible}"
+                }), mnuCtxEditorCut)
+            );
+        });
+
+
+
+
+
+
+
       },
       livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
