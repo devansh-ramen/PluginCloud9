@@ -57,19 +57,19 @@
         });
 
 
-        ide.addEventListener("init.ext/tabbehaviors/tabbehaviors", function() {
-            menus.addItemByPath("~", new apf.divider(), 2000, mnuContextTabs);
-            menus.addItemByPath("File Revision sHistory...", new apf.item({
-                command : "revisionpanel"
-            }), 2100, mnuContextTabs);
-        });
+   //     ide.addEventListener("init.ext/tabbehaviors/tabbehaviors", function() {
+   //         menus.addItemByPath("~", new apf.divider(), 2000, mnuContextTabs);
+   //         menus.addItemByPath("Add Comment", new apf.item({
+   //             command : "livecoffee"
+   //         }), 2100, mnuContextTabs);
+   //     });
 
         ide.addEventListener("init.ext/code/code", function() {
             self.nodes.push(
                 mnuCtxEditor.insertBefore(new apf.item({
-                    id : "mnuCtxEditorRevisions",
-                    caption : "File Revision sHistory...",
-                    command: "revisionpanel"
+                    id : "pluginComment",
+                    caption : "Add Comment",
+                    command: "livecoffee"
                 }), mnuCtxEditorCut),
                 mnuCtxEditor.insertBefore(new apf.divider({
                     visible : "{mnuCtxEditorRevisions.visible}"
