@@ -63,17 +63,17 @@
    //             command : "livecoffee"
    //         }), 2100, mnuContextTabs);
    //     });
-
+        var self = this;
         ide.addEventListener("init.ext/code/code", function() {
-            this.nodes.push(
+            self.nodes.push(
                 mnuCtxEditor.insertBefore(new apf.item({
                     id : "pluginComment",
                     caption : "Add Comment",
                     command: "livecoffee"
+                }), mnuCtxEditorCut), //menu divider
+                mnuCtxEditor.insertBefore(new apf.divider({
+                    visible : "{mnuCtxEditorRevisions.visible}" //menu divider
                 }), mnuCtxEditorCut)
-              //  mnuCtxEditor.insertBefore(new apf.divider({
-               //     visible : "{mnuCtxEditorRevisions.visible}"
-               // }), mnuCtxEditorCut)
             );
         });
 
