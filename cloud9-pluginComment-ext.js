@@ -65,15 +65,15 @@
    //     });
 
         ide.addEventListener("init.ext/code/code", function() {
-            self.nodes.push(
+            this.nodes.push(
                 mnuCtxEditor.insertBefore(new apf.item({
                     id : "pluginComment",
                     caption : "Add Comment",
                     command: "livecoffee"
                 }), mnuCtxEditorCut),
-                mnuCtxEditor.insertBefore(new apf.divider({
-                    visible : "{mnuCtxEditorRevisions.visible}"
-                }), mnuCtxEditorCut)
+              //  mnuCtxEditor.insertBefore(new apf.divider({
+               //     visible : "{mnuCtxEditorRevisions.visible}"
+               // }), mnuCtxEditorCut)
             );
         });
 
