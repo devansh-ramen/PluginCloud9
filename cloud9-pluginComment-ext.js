@@ -25,7 +25,7 @@
       alone: true,
       markup: markup,
       commands: {
-        'livecoffee': {
+        'loginpanel': {
           hint: 'Compile the current coffeescript document'
         }
       },
@@ -37,7 +37,7 @@
           _this = this;
         _self = this;
         commands.addCommand({
-          name: "livecoffee",
+          name: "loginpanel",
           hint: "start livecoffee plugin",
           bindKey: {
             mac: "Command-K",
@@ -49,9 +49,9 @@
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
         this.nodes.push(menus.addItemByPath("Edit/Add Comments", new apf.item({ //adding an option to the Top Menu 
-          command: "livecoffee"
+          command: "loginpanel"
         }), MENU_ENTRY_POSITION));
-        this.hotitems['livecoffee'] = [this.nodes[1]];
+        this.hotitems['loginpanel'] = [this.nodes[1]];
         ide.addEventListener('livecoffee_show_file', function(options) {
           return _this.show(options);
         });
@@ -69,7 +69,7 @@
                 mnuCtxEditor.insertBefore(new apf.item({
                     id : "pluginComment",
                     caption : "Add Comment",
-                    command: "livecoffee"
+                    command: "loginpanel"
                 }), mnuCtxEditorCut), //menu divider
                 mnuCtxEditor.insertBefore(new apf.divider({
                     visible : "{mnuCtxEditorRevisions.visible}" //menu divider
@@ -104,7 +104,7 @@
          // });
        // }
       },
-      loginPanel: function() {
+      loginpanel: function() {
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
