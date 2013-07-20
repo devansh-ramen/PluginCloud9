@@ -7,7 +7,8 @@
     ext = require('core/ext');
     util = require('core/util');
     editors = require('ext/editors/editors');
-    markup = require('./pluginComment.xml.js'); //important
+    markup = require('./login.xml.js'); //important
+   // markupLogin = require('./pluginComment.xml.js'); //important
     menus = require("ext/menus/menus"); //important
     commands = require("ext/commands/commands");
     CoffeeScript = require('./vendor/coffeescript.js');
@@ -81,10 +82,35 @@
       },
       livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
-          _this = this;
+        _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.liveCoffeeOutput.show();
+        this.loginOutput.show();
+        //if (this.liveCoffeeOutput.visible) {
+         // editor = editors.currentEditor;
+        //  aceEditor = editor.amlEditor.$editor;
+         // liveCoffeeEditor = this.liveCoffeeCodeOutput.$editor;
+         // editor.ceEditor.addEventListener('keyup', function() {
+         //   return _this.compile();
+         // });
+          //aceEditor.addEventListener('click', function() {
+           // if (_this.liveCoffeeOptMatchLines.checked) {
+          //    return _this.highlightBlockFromCoffee();
+            //}
+         //});
+          //liveCoffeeEditor.addEventListener('click', function() {
+          //  if (_this.liveCoffeeOptMatchLines.checked) {
+             // return _this.highlightBlockFromJS();
+           // }
+         // });
+       // }
+      },
+      loginPanel: function() {
+        var aceEditor, editor, liveCoffeeEditor,
+        _this = this;
+        ext.initExtension(this);
+       // this.compile();
+        this.login.show();
         //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
@@ -303,7 +329,7 @@
     //    this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
        // liveCoffeeCodeOutput.syntax = 'javascript';
       //  this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
-        this.liveCoffeeOutput = liveCoffeeOutput;
+        this.loginOutput = loginOutput;
        // liveCoffeeNodes.disable();
        // this.liveCoffeeNodes = liveCoffeeNodes;
         //this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
@@ -342,7 +368,7 @@
       closeCodeOutput: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
        // this.removeHighlightedBlocks();
-        return this.liveCoffeeOutput.hide();
+        return this.loginOutput.hide();
       },
       saveComment: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
@@ -356,6 +382,12 @@
         return setTimeout((function() {
           //return _this.startLiveCoffee(line, options.showJS);
         }), OPEN_FILE_TIMEOUT);
+      },
+      login: function() {
+      //  this.liveCoffeeOptMatchLines.uncheck();
+       // this.removeHighlightedBlocks();
+        alert('Process Login');
+        livecoffee();
       },
      /* startLiveCoffee: function(line, showJS) { 
         var _ref,
