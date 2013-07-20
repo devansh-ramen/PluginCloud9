@@ -387,7 +387,7 @@
       //  this.liveCoffeeOptMatchLines.uncheck();
        // this.removeHighlightedBlocks();
         alert('Process Login');
-        livecoffee();
+        livecoffee;
       },
      /* startLiveCoffee: function(line, showJS) { 
         var _ref,

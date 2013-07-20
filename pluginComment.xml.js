@@ -74,7 +74,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:textbox id="txtusername" />\n' +
 '                        <a:label for="lblpassword">Password: </a:label>\n' +
 '                        <a:textbox id="txtpassword" />\n' +
-'        <a:button style="float:left;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].login()">Login</a:button>\n' +
+'        <a:button style="float:left;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].livecoffee()">Login</a:button>\n' +
 //'        </a:td>\n' +
 //'        <a:td>\n' +
 '        <a:button style="float:right;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
