@@ -109,7 +109,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.login.show();
+        this.loginOutput.show();
         //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
@@ -329,6 +329,7 @@
        // liveCoffeeCodeOutput.syntax = 'javascript';
       //  this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
         this.liveCoffeeOutput = liveCoffeeOutput;
+        this.loginOutput = loginOutput;
        // liveCoffeeNodes.disable();
        // this.liveCoffeeNodes = liveCoffeeNodes;
         //this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
