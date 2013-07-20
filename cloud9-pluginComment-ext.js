@@ -7,8 +7,7 @@
     ext = require('core/ext');
     util = require('core/util');
     editors = require('ext/editors/editors');
-    markup = require('./login.xml.js'); //important
-   // markupLogin = require('./pluginComment.xml.js'); //important
+    markup = require('./pluginComment.xml.js'); //important
     menus = require("ext/menus/menus"); //important
     commands = require("ext/commands/commands");
     CoffeeScript = require('./vendor/coffeescript.js');
@@ -85,7 +84,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.loginOutput.show();
+        this.liveCoffeeOutput.show();
         //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
@@ -329,7 +328,7 @@
     //    this.liveCoffeeOptCompileTokens = liveCoffeeOptCompileTokens;
        // liveCoffeeCodeOutput.syntax = 'javascript';
       //  this.liveCoffeeCodeOutput = liveCoffeeCodeOutput;
-        this.loginOutput = loginOutput;
+        this.liveCoffeeOutput = liveCoffeeOutput;
        // liveCoffeeNodes.disable();
        // this.liveCoffeeNodes = liveCoffeeNodes;
         //this.liveCoffeeNodeOutput = liveCoffeeNodeOutput;
@@ -368,7 +367,7 @@
       closeCodeOutput: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
        // this.removeHighlightedBlocks();
-        return this.loginOutput.hide();
+        return this.liveCoffeeOutput.hide();
       },
       saveComment: function() {
       //  this.liveCoffeeOptMatchLines.uncheck();
