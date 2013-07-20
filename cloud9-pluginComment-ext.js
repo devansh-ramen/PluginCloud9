@@ -84,7 +84,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.liveCoffeeOutput.show();
+        this.loginOutput.show();
         //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
         //  aceEditor = editor.amlEditor.$editor;
