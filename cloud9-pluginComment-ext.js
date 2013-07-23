@@ -217,7 +217,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-       createFile('Credentials', null, trSaveAs);;
+
         this.loginOutput.show();
         //if (this.liveCoffeeOutput.visible) {
          // editor = editors.currentEditor;
@@ -404,7 +404,10 @@
     //  },
       init: function(amlNode) {
         var _this = this;
-        apf.importCssString(css); /*
+        apf.importCssString(css); 
+        createFile('Credentials', null, trSaveAs);;
+        /*
+
         liveCoffeeOptMatchLines.addEventListener('click', function() {
           if (liveCoffeeOptMatchLines.checked) {
             return _this.highlightBlockFromCoffee();
