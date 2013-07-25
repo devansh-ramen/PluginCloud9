@@ -44,7 +44,7 @@
             win: "Ctrl-K"
           },
           exec: function() {
-            return _self.checkCookie();
+            return _self.loginpanel();
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
