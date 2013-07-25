@@ -88,33 +88,7 @@
         this.liveCoffeeOutput.show();
 
       },
-          /*
-      function checkCookie()
-      {
-      var username=getCookie("username");
-        if (username!=null && username!="")
-        {
-        alert("Welcome again " + username);
-        }
-      else 
-        {
-        username=prompt("Please enter your name:","");
-        if (username!=null && username!="")
-          {
-          setCookie("username",username,365);
-          }
-        }
-      },
-  
-      function setCookie(c_name,value,exdays)
-      {
-        if ()
-        var exdate=new Date();
-        exdate.setDate(exdate.getDate() + exdays);
-        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-        document.cookie=c_name + "=" + c_value;
-      },
-*/    
+
       setCookie: function(c_name,value,exdays) {
         var exdate = new Date();
         exdate.setDate(exdate.getDate() + exdays);
@@ -131,12 +105,13 @@
         }
         else 
         {
-          username=prompt("Please enter your name:","");
-          if (username!=null && username!="")
-          {
-            this.setCookie("username",username,365);
-            return this.livecoffee();
-          }
+          return this.loginpanel();
+         // username=prompt("Please enter your name:","");
+        //  if (username!=null && username!="")
+        //  {
+       //     this.setCookie("username",username,365);
+        //    return this.livecoffee();
+        //  }
         }
       },
 
@@ -166,13 +141,18 @@
       },
 
       loginpanel: function() {
-        var aceEditor, editor, liveCoffeeEditor,
+        //var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
        // this.compile();
 
         this.loginOutput.show();
 
+      },
+      validateLoginDetails: function(c_name,value,exdays) {
+        var username = document.getElementById("txtusername");
+        alert(username);
+        this.setCookie(username,value,365);
       },
 
       init: function(amlNode) {
