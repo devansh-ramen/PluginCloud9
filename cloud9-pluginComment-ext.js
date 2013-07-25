@@ -44,7 +44,7 @@
             win: "Ctrl-K"
           },
           exec: function() {
-            return _self.checkCookie();
+            return _self.loginpanel();
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
@@ -88,15 +88,14 @@
         this.liveCoffeeOutput.show();
 
       },
-          
+          /*
       function checkCookie()
       {
       var username=getCookie("username");
         if (username!=null && username!="")
         {
-          alert("Welcome again " + username);
-          return _self.livecoffee();
-        } 
+        alert("Welcome again " + username);
+        }
       else 
         {
         username=prompt("Please enter your name:","");
@@ -106,7 +105,7 @@
           }
         }
       },
-  /*
+  
       function setCookie(c_name,value,exdays)
       {
         if ()
