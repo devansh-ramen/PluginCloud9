@@ -79,7 +79,7 @@
 
 
       },
-      addcommentpanel: function() {
+      livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
@@ -131,7 +131,6 @@
   
         this.liveCoffeeOutput = liveCoffeeOutput;
         this.loginOutput = loginOutput;
-        this.loginOutput.show();
       },
       enable: function() {  /*
         this.nodes.each(function(item) {
