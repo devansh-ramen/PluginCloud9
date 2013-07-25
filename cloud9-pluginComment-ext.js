@@ -114,9 +114,34 @@
         var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
         document.cookie=c_name + "=" + c_value;
       },
-*/
+
+
+*/    getCookie: function() {
+        var c_value = document.cookie;
+        var c_start = c_value.indexOf(" " + c_name + "=");
+        if (c_start == -1)
+        {
+          c_start = c_value.indexOf(c_name + "=");
+        }
+        if (c_start == -1)
+        {
+          c_value = null;
+        }
+        else
+        {
+          c_start = c_value.indexOf("=", c_start) + 1;
+          var c_end = c_value.indexOf(";", c_start);
+          if (c_end == -1)
+          {
+             c_end = c_value.length;
+          }
+          c_value = unescape(c_value.substring(c_start,c_end));
+        }
+        return c_value;
+      },
+
       loginpanel: function() {
-            var username=getCookie("username");
+        var username=this.getCookie("username");
         if (username!=null && username!="")
         {
         alert("Welcome again " + username);
@@ -126,7 +151,7 @@
         username=prompt("Please enter your name:","");
         if (username!=null && username!="")
           {
-          setCookie("username",username,365);
+          //setCookie("username",username,365);
           }
         }
       },
