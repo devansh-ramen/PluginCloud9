@@ -149,10 +149,10 @@
         this.loginOutput.show();
 
       },
-      validateLoginDetails: function(this) {
+      validateLoginDetails: function(para) {
         var username = document.getElementById ("txtusername").value;
         alert(this.txtusername);
-        alert(this);
+        alert(para);
         alert(username);
         //this.setCookie("username",username,365);
         this.loginOutput.hide();
