@@ -115,7 +115,7 @@
         document.cookie=c_name + "=" + c_value;
       },
 */    
-      setCookie: function() {
+      setCookie: function(c_name,value,exdays) {
         var exdate = new Date();
         exdate.setDate(exdate.getDate() + exdays);
         var c_value = escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
@@ -139,8 +139,8 @@
       },
 
 
-      getCookie: function() {
-       /* var c_value = document.cookie;
+      getCookie: function(c_name) {
+        var c_value = document.cookie;
         var c_start = c_value.indexOf(" " + c_name + "=");
         if (c_start == -1)
         {
@@ -159,12 +159,12 @@
              c_end = c_value.length;
           }
           c_value = unescape(c_value.substring(c_start,c_end));
-        }*/
-        return "cook";
+        }
+        return c_value;
       },
 
       loginpanel: function() {
-        var username = this.getCookie();
+        var username = this.getCookie("username");
         alert("Welcome again " + username);
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
