@@ -44,7 +44,7 @@
             win: "Ctrl-K"
           },
           exec: function() {
-            return _self.livecoffee();
+           // return _self.livecoffee();
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
@@ -79,7 +79,7 @@
 
 
       },
-      livecoffee: function() {
+      addcommentpanel: function() {
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
@@ -161,6 +161,7 @@
         this.liveCoffeeTokenOutput.destroy(true, true);  */
       }, 
       closeCodeOutput: function() {
+        this.loginOutput.hide();
         return this.liveCoffeeOutput.hide();
       },
       saveComment: function() {
