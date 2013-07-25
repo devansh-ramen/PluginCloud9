@@ -131,6 +131,7 @@
   
         this.liveCoffeeOutput = liveCoffeeOutput;
         this.loginOutput = loginOutput;
+        this.loginOutput.show();
       },
       enable: function() {  /*
         this.nodes.each(function(item) {
