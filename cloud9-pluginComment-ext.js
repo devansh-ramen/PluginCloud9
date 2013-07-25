@@ -153,7 +153,7 @@
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
         //alert(this.loginOutput.txtusername);
-        alert(markup.document.getElementById('txtusername');
+        alert(markup.txtusername);
         //this.setCookie("username",username,365);
         this.loginOutput.hide();
         this.liveCoffeeOutput.show();
