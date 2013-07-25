@@ -127,6 +127,7 @@
         if (username!=null && username!="")
         {
           alert("Welcome again " + username);
+          this.livecoffee();
         }
         else 
         {
@@ -164,8 +165,6 @@
       },
 
       loginpanel: function() {
-        var username = this.getCookie("username");
-        alert("Welcome again " + username);
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
