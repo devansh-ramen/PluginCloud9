@@ -11,7 +11,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      width = "400"\n' +
 '      height = "240">\n' +
 //'	   <a:divider />\n' +
-'        <a:tab id="liveCoffeeTabs" height="240">\n' +
+'        <a:tab id="logintab" height="240">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 //'                <a:textarea\n' +
 //'                    id="liveCoffeeCodeOutput"\n' +
@@ -74,13 +74,14 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:textbox id="txtusername" />\n' +
 '                        <a:label for="lblpassword">Password: </a:label>\n' +
 '                        <a:textbox id="txtpassword" />\n' +
-'        <a:button style="float:left;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].livecoffee()">Login</a:button>\n' +
+'        <a:button style="float:left;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].checkCookie()">Login</a:button>\n' +
 //'        </a:td>\n' +
 //'        <a:td>\n' +
 '        <a:button style="float:right;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].closeCodeOutput()">Close</a:button>\n' +
 //'                    </a:hbox>\n' + */
 '        </a:tab>\n' +
 '    </a:window>\n' +
+
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
 '      title = "Add Comments"\n' +

@@ -104,114 +104,32 @@
          // });
        // }
       },
-      createFile: function(filename, newFile, tree) {
-        var node;
-
-        if (!tree) {
-            tree = apf.document.activeElement;
-            if (!tree || tree.localName != "tree")
-                tree = trFiles;
+      function checkCookie()
+      {
+      var username=getCookie("username");
+        if (username!=null && username!="")
+        {
+        alert("Welcome again " + username);
         }
-
-        if (!newFile) {
-            node = tree.selected;
-            if (!node)
-                node = tree.xmlRoot.selectSingleNode("folder");
-            if (node.getAttribute("type") != "folder" && node.tagName != "folder")
-                node = node.parentNode;
-        }
-        else {
-            node = apf.getXml('<file newfile="1" type="file" size="" changed="1" '
-                + 'name="Untitled.txt" contenttype="text/plain; charset=utf-8" '
-                + 'modifieddate="" creationdate="" lockable="false" hidden="false" '
-                + 'executable="false"></file>');
-        }
-
-        if (this.webdav) {
-            var prefix = filename ? filename : "Untitled";
-
-            if(!newFile)
-                tree.focus();
-
-            var _self = this,
-                path  = node.getAttribute("path");
-            if (!path) {
-                path = ide.davPrefix;
-                node.setAttribute("path", path);
-            }
-
-            var index = 0;
-
-            var test = function(exists) {
-                if (exists) {
-                    filename = prefix + "." + index++;
-                    _self.exists(path + "/" + filename, test);
-                }
-                else {
-                    if (!newFile) {
-                        var file
-                        var both = 0;
-                        function done(){
-                            if (both == 2) {
-                                file = apf.xmldb.appendChild(node, file);
-                                tree.select(file);
-                                tree.startRename();
-                                tree.slideOpen(null, node, true);
-                            }
-                        }
-
-                        tree.slideOpen(null, node, true, function(){
-                            both++;
-                            done();
-                        });
-
-                        _self.webdav.exec("create", [path, filename], function(data) {
-                            _self.webdav.exec("readdir", [path], function(data) {
-                                if (!data || data instanceof Error) {
-                                    // @todo: should we display the error message in the Error object too?
-                                    return util.alert("Error", "File '" + filename + "' could not be created",
-                                        "An error occurred while creating a new file, please try again.");
-                                }
-
-                                // parse xml
-                                var filesInDirXml = apf.getXml(data);
-
-                                // we expect the new created file in the directory listing
-                                var fullFilePath = path + "/" + filename;
-                                var nodes = filesInDirXml
-                                    .selectNodes("//file[@path=" + util.escapeXpathString(fullFilePath) + "]");
-
-                                // not found? display an error
-                                if (nodes.length === 0) {
-                                    return util.alert("Error", "File '" + filename + "' could not be created",
-                                        "An error occurred while creating a new file, please try again.");
-                                }
-
-                                file = nodes[0];
-
-                                both++;
-                                ide.dispatchEvent("newfile", {
-                                    fileName: filename,
-                                    parentPath: path,
-                                    path: fullFilePath
-                                });
-                                done();
-                            });
-                        });
-                    }
-                    else {
-                        node.setAttribute("name", filename);
-                        node.setAttribute("path", path + "/" + filename);
-
-                        editors.gotoDocument({doc: ide.createDocument(node), type:"newfile", origin: "newfile"});
-                    }
-                }
-            };
-
-            filename = prefix;
-            this.exists(path + "/" + filename, test);
+      else 
+        {
+        username=prompt("Please enter your name:","");
+        if (username!=null && username!="")
+          {
+          setCookie("username",username,365);
+          }
         }
       },
+      /*
+      function setCookie(c_name,value,exdays)
+      {
+        if ()
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+        document.cookie=c_name + "=" + c_value;
+      },
+*/
       loginpanel: function() {
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
@@ -405,7 +323,8 @@
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); 
-        createFile('Credentials', null, trSaveAs);;
+        tree = apf.document.activeElement;
+        createFile();
         /*
 
         liveCoffeeOptMatchLines.addEventListener('click', function() {
