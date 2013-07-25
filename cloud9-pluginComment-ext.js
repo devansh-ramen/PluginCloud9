@@ -79,12 +79,12 @@
 
 
       },
-      addcommentpanel: function() {
+      livecoffee: function() {
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.loginOutput.hide();
+        this.loginOutput.show();
         this.liveCoffeeOutput.show();
 
       },
