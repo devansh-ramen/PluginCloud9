@@ -44,7 +44,7 @@
             win: "Ctrl-K"
           },
           exec: function() {
-           // return _self.livecoffee();
+            return _self.loginpanel();
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
@@ -84,7 +84,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.loginOutput.show();
+        this.loginOutput.hide();
         this.liveCoffeeOutput.show();
 
       },
