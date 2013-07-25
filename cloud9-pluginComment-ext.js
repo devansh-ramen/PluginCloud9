@@ -135,6 +135,7 @@
           if (username!=null && username!="")
           {
             return this.setCookie("username",username,365);
+            this.livecoffee();
           }
         }
       },
