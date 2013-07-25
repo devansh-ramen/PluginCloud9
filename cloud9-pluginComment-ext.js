@@ -84,7 +84,7 @@
         _this = this;
         ext.initExtension(this);
        // this.compile();
-        this.loginOutput.hide();
+        //this.loginOutput.hide();
         this.liveCoffeeOutput.show();
 
       },
