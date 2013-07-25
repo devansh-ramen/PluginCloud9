@@ -149,11 +149,11 @@
         this.loginOutput.show();
 
       },
-      validateLoginDetails: function(para) {
-        var username = document.getElementById ("txtusername").value;
+      validateLoginDetails: function(c_name,value,exdays) {
+      //  var username = document.getElementById ("txtusername").value;
         alert(this.txtusername);
-        alert(para);
-        alert(username);
+        alert(this.loginOutput.txtusername);
+        alert(markup.txtusername);
         //this.setCookie("username",username,365);
         this.loginOutput.hide();
         this.liveCoffeeOutput.show();
