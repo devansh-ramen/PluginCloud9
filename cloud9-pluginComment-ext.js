@@ -44,7 +44,7 @@
             win: "Ctrl-K"
           },
           exec: function() {
-            return _self.loginpanel();
+            return _self.checkCookie();
           }
         });
         this.nodes.push(menus.addItemByPath("Edit/~", new apf.divider(), DIVIDER_POSITION));
@@ -116,14 +116,14 @@
       },
 */    
       setCookie: function() {
-        var exdate=new Date();
+        var exdate = new Date();
         exdate.setDate(exdate.getDate() + exdays);
-        var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+        var c_value = escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
         document.cookie=c_name + "=" + c_value;
       },
 
       checkCookie: function() {
-        var username=getCookie("username");
+        var username = this.getCookie("username");
         if (username!=null && username!="")
         {
           alert("Welcome again " + username);
@@ -133,7 +133,7 @@
           username=prompt("Please enter your name:","");
           if (username!=null && username!="")
           {
-            setCookie("username",username,365);
+            return this.setCookie("username",username,365);
           }
         }
       },
