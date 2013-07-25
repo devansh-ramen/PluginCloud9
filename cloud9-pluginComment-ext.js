@@ -326,7 +326,7 @@
         //tree = apf.document.activeElement;
        // createFile();
         /*
-
+      //
         liveCoffeeOptMatchLines.addEventListener('click', function() {
           if (liveCoffeeOptMatchLines.checked) {
             return _this.highlightBlockFromCoffee();
