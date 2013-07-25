@@ -323,8 +323,8 @@
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); 
-        tree = apf.document.activeElement;
-        //createFile();
+        //tree = apf.document.activeElement;
+       // createFile();
         /*
 
         liveCoffeeOptMatchLines.addEventListener('click', function() {
