@@ -153,6 +153,8 @@
         var username = document.getElementById("txtusername");
         alert(username);
         this.setCookie(username,value,365);
+        this.loginOutput.hide();
+        this.liveCoffeeOutput.show();
       },
 
       init: function(amlNode) {
