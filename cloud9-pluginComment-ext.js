@@ -114,9 +114,8 @@
         var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
         document.cookie=c_name + "=" + c_value;
       },
-
-
-*/    getCookie: function() {
+*/
+      getCookie: function() {
         var c_value = document.cookie;
         var c_start = c_value.indexOf(" " + c_name + "=");
         if (c_start == -1)
@@ -141,19 +140,13 @@
       },
 
       loginpanel: function() {
-        var username=this.getCookie("username");
-        if (username!=null && username!="")
-        {
-        alert("Welcome again " + username);
-        }
-      else 
-        {
-        username=prompt("Please enter your name:","");
-        if (username!=null && username!="")
-          {
-          //setCookie("username",username,365);
-          }
-        }
+        var aceEditor, editor, liveCoffeeEditor,
+        _this = this;
+        ext.initExtension(this);
+       // this.compile();
+
+        this.loginOutput.show();
+
       },
 
       init: function(amlNode) {
