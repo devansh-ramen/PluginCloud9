@@ -106,7 +106,7 @@
           }
         }
       },
-  
+  /*
       function setCookie(c_name,value,exdays)
       {
         if ()
