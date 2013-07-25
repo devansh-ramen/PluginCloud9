@@ -150,7 +150,7 @@
 
       },
       validateLoginDetails: function(c_name,value,exdays) {
-        var username = document.getElementById("txtusername");
+        var username = document.getElementById("txtusername").value;
         alert(this.txtusername);
         alert(this.loginOutput.txtusername);
         alert(username);
