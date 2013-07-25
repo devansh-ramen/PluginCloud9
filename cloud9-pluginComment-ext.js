@@ -127,15 +127,15 @@
         if (username!=null && username!="")
         {
           alert("Welcome again " + username);
-          this.livecoffee();
+          return this.livecoffee();
         }
         else 
         {
           username=prompt("Please enter your name:","");
           if (username!=null && username!="")
           {
-            return this.setCookie("username",username,365);
-            this.livecoffee();
+            this.setCookie("username",username,365);
+            return this.livecoffee();
           }
         }
       },
