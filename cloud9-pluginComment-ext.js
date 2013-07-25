@@ -324,7 +324,7 @@
         var _this = this;
         apf.importCssString(css); 
         tree = apf.document.activeElement;
-        createFile();
+        //createFile();
         /*
 
         liveCoffeeOptMatchLines.addEventListener('click', function() {
