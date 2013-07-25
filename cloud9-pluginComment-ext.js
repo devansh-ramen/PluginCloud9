@@ -151,8 +151,8 @@
       },
       validateLoginDetails: function(c_name,value,exdays) {
       //  var username = document.getElementById ("txtusername").value;
-        alert(this.txtusername);
-        alert(this.loginOutput.txtusername);
+        //alert(this.txtusername);
+        //alert(this.loginOutput.txtusername);
         alert(markup.txtusername);
         //this.setCookie("username",username,365);
         this.loginOutput.hide();
