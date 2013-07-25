@@ -81,7 +81,6 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 //'                    </a:hbox>\n' + */
 '        </a:tab>\n' +
 '    </a:window>\n' +
-
 '    <a:window\n' +
 '      id = "liveCoffeeOutput"\n' +
 '      title = "Add Comments"\n' +
