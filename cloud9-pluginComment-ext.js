@@ -141,7 +141,9 @@
         this.loginOutput.show();
 
       },
-      validateLoginDetails: function(c_name,value,exdays) {
+      validateLoginDetails: function() {
+        // WHEN LOGIN BUTTON IS CLICKED
+        // COULD NOT RETRIEVE USERNAME PASSWORD 
 
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
@@ -150,7 +152,7 @@
         //this.setCookie("username",username,365);
 
 
-       username=prompt("Please enter your name:","");
+      username=prompt("Please enter your name:","");
       if (username!=null && username!="")
       {
           this.setCookie("username",username,365);
