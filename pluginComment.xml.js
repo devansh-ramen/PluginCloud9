@@ -24,7 +24,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 //'        </a:tab>\n' +
 '    </a:window>\n' +
 '    <a:window\n' +
-'      id = "liveCoffeeOutput"\n' +
+'      id = "addCommentOutput"\n' +
 '      title = "Add Comments"\n' +
 '      center = "true"\n' +
 '      modal = "false"\n' +

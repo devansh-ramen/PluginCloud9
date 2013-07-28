@@ -56,13 +56,6 @@
           return _this.show(options);
         });
 
-
-   //     ide.addEventListener("init.ext/tabbehaviors/tabbehaviors", function() {
-   //         menus.addItemByPath("~", new apf.divider(), 2000, mnuContextTabs);
-   //         menus.addItemByPath("Add Comment", new apf.item({
-   //             command : "livecoffee"
-   //         }), 2100, mnuContextTabs);
-   //     });
         var self = this;
         ide.addEventListener("init.ext/code/code", function() {
             self.nodes.push(
@@ -83,9 +76,8 @@
         var aceEditor, editor, liveCoffeeEditor,
         _this = this;
         ext.initExtension(this);
-       // this.compile();
         this.loginOutput.hide();
-        this.liveCoffeeOutput.show();
+        this.addCommentOutput.show(); // displays Add Comment Window
 
       },
 
@@ -101,11 +93,11 @@
         if (username!=null && username!="")
         {
           alert("Welcome again " + username);
-          return this.livecoffee();
+          return this.livecoffee(); //show Add Comment Window
         }
         else 
         {
-          return this.loginpanel();
+          return this.loginpanel(); //show Login Window
          // username=prompt("Please enter your name:","");
         //  if (username!=null && username!="")
         //  {
@@ -150,20 +142,29 @@
 
       },
       validateLoginDetails: function(c_name,value,exdays) {
+
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
         //alert(this.loginOutput.txtusername);
-        alert(markup.txtusername.value);
+        //alert(markup.txtusername.value);
         //this.setCookie("username",username,365);
-        this.loginOutput.hide();
-        this.liveCoffeeOutput.show();
+
+
+       username=prompt("Please enter your name:","");
+      if (username!=null && username!="")
+      {
+          this.setCookie("username",username,365);
+          return this.livecoffee();
+      }
+       // this.loginOutput.hide();
+       // this.addCommentOutput.show();
       },
 
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); 
   
-        this.liveCoffeeOutput = liveCoffeeOutput;
+        this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
       },
       enable: function() {  /*
@@ -188,7 +189,7 @@
         this.liveCoffeeOptCompileTokens.destroy(true, true);
         this.liveCoffeeOptMatchLines.destroy(true, true);
         this.liveCoffeeCodeOutput.destroy(true, true);
-        this.liveCoffeeOutput.destroy(true, true);
+        this.addCommentOutput.destroy(true, true);
         this.liveCoffeeNodes.destroy(true, true);
         this.liveCoffeeNodeOutput.destroy(true, true);
         this.liveCoffeeTokens.destroy(true, true);
@@ -196,7 +197,7 @@
       }, 
       closeCodeOutput: function() {
         this.loginOutput.hide();
-        return this.liveCoffeeOutput.hide();
+        return this.addCommentOutput.hide();
       },
       saveComment: function() {
         alert('Save comment function not ready');
