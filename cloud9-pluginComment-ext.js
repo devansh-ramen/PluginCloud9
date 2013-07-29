@@ -90,6 +90,9 @@
 
       checkCookie: function() {
         var username = this.getCookie("username");
+
+        return this.loginpanel();   //tmp test code
+
         if (username!=null && username!="")
         {
           alert("Welcome again " + username);
