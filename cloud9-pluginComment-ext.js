@@ -151,7 +151,7 @@
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
         //alert(this.loginOutput.txtusername);
-        alert(markup);
+        alert(markup.getElementById().value);
         //this.setCookie("username",username,365);
 
 
