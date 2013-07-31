@@ -154,7 +154,7 @@
      //   alert(username);
 //        alert(markup.getDocument().getElementById('txtusername').value);
         //this.setCookie("username",username,365);
-alert(this.txtusername.value());
+alert(this.loginOutput.value());
 
       username=prompt("Please enter your name:","");
       if (username!=null && username!="")
