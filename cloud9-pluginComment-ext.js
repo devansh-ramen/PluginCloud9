@@ -139,7 +139,7 @@
 
       validateLoginDetails: function() {
         // WHEN LOGIN BUTTON IS CLICKED
-  
+
         //username=prompt("Please enter your name:","");
         txtusername = this.txtusername.value;
 
@@ -159,7 +159,8 @@
         var _this = this;
         apf.importCssString(css); 
         
-        this.txtusername= txtusername;
+        this.txtusername = txtusername;
+        this.txtpassword.type = 'password';
         this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
       },

@@ -15,7 +15,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '                        <a:label id="lblusername">Username: </a:label>\n' +
 '                        <a:input class="test" id="txtusername" />\n' +
 '                        <a:label id="lblpassword">Password: </a:label>\n' +
-'                        <a:input type="password" id="txtpassword" />\n' +
+'                        <a:input type="password" id="txtpassword" style="" />\n' +
 '        <a:button style="float:left;width:50%;display:inline" onclick="require(\'core/ext\').extLut[\'ext/livecoffee/livecoffee\'].validateLoginDetails()">Login</a:button>\n' +
 //'        </a:td>\n' +
 //'        <a:td>\n' +
