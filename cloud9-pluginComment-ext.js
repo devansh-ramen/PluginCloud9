@@ -149,11 +149,11 @@
         // WHEN LOGIN BUTTON IS CLICKED
         // validation required
         //username=prompt("Please enter your name:","");
-        var txtusername = this.txtusername.value;
+        txtusername = this.txtusername.value;
 
         if (txtusername!=null && txtusername!="")
         { 
-            alert("You are login " + username);
+            alert("You are login " + txtusername);
             this.setCookie("username",this.txtusername.value,365);
             return this.livecoffee();
         }
