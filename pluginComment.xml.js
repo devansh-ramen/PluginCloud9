@@ -9,7 +9,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      buttons = "close"\n' +
 '      kbclose = "true"\n' +
 '      width = "400"\n' +
-'      height = "200">\n' +
+'      height = "180">\n' +
 //'	   <a:divider />\n' +
 //'        <a:tab id="loginTabs" height="240">\n' +
 '                        <a:label id="lblusername">Username: </a:label>\n' +

@@ -89,7 +89,7 @@
       },
 
       checkCookie: function() {
-        var username = this.getCookie("pluginAddCommentLoginCookie");
+        var username = this.getCookie("pluginCommentLoginCookie");
 
         if (username!=null && username!="")
         {
@@ -146,7 +146,7 @@
         if (txtusername!=null && txtusername!="")
         { 
             alert("You are login " + txtusername);
-            this.setCookie("pluginAddCommentLoginCookie",this.txtusername.value,365);
+            this.setCookie("pluginCommentLoginCookie",this.txtusername.value,365);
             return this.livecoffee();
         }
         else
