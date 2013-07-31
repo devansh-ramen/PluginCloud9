@@ -160,6 +160,7 @@
         apf.importCssString(css); 
         
         this.txtusername = txtusername;
+        this.txtpassword = txtpassword;
         this.txtpassword.type = 'password';
         this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
