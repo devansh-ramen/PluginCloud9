@@ -151,10 +151,10 @@
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
         //alert(this.loginOutput.txtusername);
-        alert(username);
+     //   alert(username);
 //        alert(markup.getDocument().getElementById('txtusername').value);
         //this.setCookie("username",username,365);
-
+alert(this.loginOutput.txtusername.value);
 
       username=prompt("Please enter your name:","");
       if (username!=null && username!="")
