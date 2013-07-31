@@ -162,6 +162,7 @@
         this.txtusername = txtusername;
         this.txtpassword = txtpassword;
         this.txtpassword.type = 'password';
+        txtpassword.type = 'password';
         this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
       },
