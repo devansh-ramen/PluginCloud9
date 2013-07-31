@@ -89,9 +89,7 @@
       },
 
       checkCookie: function() {
-        var username = this.getCookie("username");
-
-        return this.loginpanel();   //tmp test code
+        var username = this.getCookie("pluginAddCommentLoginCookie");
 
         if (username!=null && username!="")
         {
@@ -101,12 +99,6 @@
         else 
         {
           return this.loginpanel(); //show Login Window
-         // username=prompt("Please enter your name:","");
-        //  if (username!=null && username!="")
-        //  {
-       //     this.setCookie("username",username,365);
-        //    return this.livecoffee();
-        //  }
         }
       },
 
@@ -147,14 +139,14 @@
 
       validateLoginDetails: function() {
         // WHEN LOGIN BUTTON IS CLICKED
-        // validation required
+  
         //username=prompt("Please enter your name:","");
         txtusername = this.txtusername.value;
 
         if (txtusername!=null && txtusername!="")
         { 
             alert("You are login " + txtusername);
-            this.setCookie("username",this.txtusername.value,365);
+            this.setCookie("pluginAddCommentLoginCookie",this.txtusername.value,365);
             return this.livecoffee();
         }
         else
