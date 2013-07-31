@@ -33,7 +33,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 '      width = "400"\n' +
 '      height = "240">\n' +
 //'	   <a:divider />\n' +
-'        <a:tab id="liveCoffeeTabs" height="240">\n' +
+'        <a:tab id="addCommentTabs" height="240">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeCodeOutput"\n' +

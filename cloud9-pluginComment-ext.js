@@ -144,26 +144,21 @@
         this.loginOutput.show();
 
       },
-      validateLoginDetails: function(username) {
+
+      validateLoginDetails: function() {
         // WHEN LOGIN BUTTON IS CLICKED
-        // COULD NOT RETRIEVE USERNAME PASSWORD 
-
-      //  var username = document.getElementById ("txtusername").value;
-        //alert(this.txtusername);
-        //alert(this.loginOutput.txtusername);
-     //   alert(username);
-//        alert(markup.getDocument().getElementById('txtusername').value);
-        //this.setCookie("username",username,365);
-alert(this.txtusername.value);
-
-      username=prompt("Please enter your name:","");
-      if (username!=null && username!="")
-      {
-          this.setCookie("username",username,365);
-          return this.livecoffee();
-      }
-       // this.loginOutput.hide();
-       // this.addCommentOutput.show();
+        // validation required
+        //username=prompt("Please enter your name:","");
+        username = this.txtusername.value;
+        if (username!=null && username!="")
+        {
+            this.setCookie("username",this.txtusername.value,365);
+            return this.livecoffee();
+        }
+        else
+        {
+            alert("Please enter a username.");
+        }
       },
 
       init: function(amlNode) {
@@ -174,6 +169,7 @@ alert(this.txtusername.value);
         this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
       },
+
       enable: function() {  /*
         this.nodes.each(function(item) {
           return item.enable();
