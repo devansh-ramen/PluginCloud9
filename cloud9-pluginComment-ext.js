@@ -169,7 +169,8 @@ alert(this.txtusername.value);
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); 
-  
+        
+        this.txtusername= txtusername;
         this.addCommentOutput = addCommentOutput;
         this.loginOutput = loginOutput;
       },
