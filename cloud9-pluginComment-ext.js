@@ -144,14 +144,15 @@
         this.loginOutput.show();
 
       },
-      validateLoginDetails: function() {
+      validateLoginDetails: function(username) {
         // WHEN LOGIN BUTTON IS CLICKED
         // COULD NOT RETRIEVE USERNAME PASSWORD 
 
       //  var username = document.getElementById ("txtusername").value;
         //alert(this.txtusername);
         //alert(this.loginOutput.txtusername);
-        alert(markup.getDocument().getElementById('txtusername').value);
+        alert(username);
+//        alert(markup.getDocument().getElementById('txtusername').value);
         //this.setCookie("username",username,365);
 
 
