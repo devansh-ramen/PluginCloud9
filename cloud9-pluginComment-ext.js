@@ -13,8 +13,8 @@
     CoffeeScript = require('./vendor/coffeescript.js');
     lineMatching = require('./vendor/cs_js_source_mapping.js');
     //css = require("./pluginComment.css.js"); //important
-    ckeditor = require("./ckeditor.js"); //important ckeditor
     ckeditorjquerygoogle = require(".//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
+    ckeditor = require("./ckeditor.js"); //important ckeditor
     ckeditorjquery = require("./ckeditorjquery.js");
 
     cssckeditor= require("./ckeditor.css.js"); 
