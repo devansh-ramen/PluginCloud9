@@ -14,7 +14,7 @@
     lineMatching = require('./vendor/cs_js_source_mapping.js');
     css = require("./pluginComment.css.js"); //important
     ckeditor = require("./ckeditor.js"); //important ckeditor
-    //cssckeditor= require("./ckeditor.css.js"); 
+    cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
     CSS_CLASS_NAME = "livecoffee-highlight";
