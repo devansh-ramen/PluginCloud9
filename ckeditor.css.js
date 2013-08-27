@@ -2,7 +2,8 @@
 Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or http://ckeditor.com/license
 */
-
+define(function() {
+return '
 html, body, h1, h2, h3, h4, h5, h6, div, span, blockquote, p, address, form, fieldset, img, ul, ol, dl, dt, dd, li, hr, table, td, th, strong, em, sup, sub, dfn, ins, del, q, cite, var, samp, code, kbd, tt, pre
 {
 	line-height: 1.5em;
@@ -336,4 +337,5 @@ img.left {
     float: left;
     margin-right: 15px;
     padding: 5px;
-}
+}';});
+
