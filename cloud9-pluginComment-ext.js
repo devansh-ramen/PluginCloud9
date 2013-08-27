@@ -13,11 +13,11 @@
     CoffeeScript = require('./vendor/coffeescript.js');
     lineMatching = require('./vendor/cs_js_source_mapping.js');
     //css = require("./pluginComment.css.js"); //important
-    ckeditorjquerygoogle = require(".//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
-    ckeditor = require("./ckeditor.js"); //important ckeditor
-    ckeditorjquery = require("./ckeditorjquery.js");
+    var ckeditorjquerygoogle = require(".//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
+    var ckeditor = require("./ckeditor.js"); //important ckeditor
+    var ckeditorjquery = require("./ckeditorjquery.js");
 
-    cssckeditor= require("./ckeditor.css.js"); 
+    var cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
     CSS_CLASS_NAME = "livecoffee-highlight";
