@@ -14,8 +14,9 @@
     lineMatching = require('./vendor/cs_js_source_mapping.js');
     //css = require("./pluginComment.css.js"); //important
     ckeditor = require("./ckeditor.js"); //important ckeditor
+    ckeditorjquerygoogle = require(".//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
     ckeditorjquery = require("./ckeditorjquery.js");
-    
+
     cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
