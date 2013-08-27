@@ -37,6 +37,7 @@ return '<a:application xmlns:a="http://ajax.org/2005/aml">\n' +
 //'            <a:page id="liveCoffeeCoffeeScript" caption="Tab Title Test">\n' + //First Tab title
 '                <a:textarea\n' +
 '                    id="liveCoffeeCodeOutput"\n' +
+'					 class="ckeditor"\n'+
 '                    flex="1"\n' +
 '                    realtime="true"\n' +
 '                    border="0"\n' +
