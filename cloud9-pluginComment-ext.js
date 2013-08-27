@@ -15,7 +15,7 @@
     //css = require("./pluginComment.css.js"); //important
     ckeditor = require("./ckeditor.js"); //important ckeditor
     ckeditorjquery = require("./ckeditorjquery.js");
-    jquery = require("//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
+    
     cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
