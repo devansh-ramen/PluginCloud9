@@ -12,7 +12,7 @@
     commands = require("ext/commands/commands");
     CoffeeScript = require('./vendor/coffeescript.js');
     lineMatching = require('./vendor/cs_js_source_mapping.js');
-    css = require("./pluginComment.css.js"); //important
+    //css = require("./pluginComment.css.js"); //important
     ckeditor = require("./ckeditor.js"); //important ckeditor
     cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
@@ -162,7 +162,6 @@
         apf.importCssString(css); 
         
         $( '#liveCoffeeCodeOutput' ).ckeditor(); 
-        
         this.txtusername = txtusername;
         this.txtpassword = txtpassword;
         this.txtpassword.type = 'password';
