@@ -207,6 +207,8 @@
       },
       saveComment: function() {
       // alert('Save comment function not ready');
+$(document).ready(function () {
+  //your code here
 
         $.ajax({
                 url: "http://www.mintdoc.com/api.php?action=addComment",
@@ -216,6 +218,7 @@
                     alert(data);
                     alert("Call sucessful")
                     });
+                });
       },
       show: function(options) {
         var line,
