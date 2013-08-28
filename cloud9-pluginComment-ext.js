@@ -214,6 +214,7 @@
                 async: false
                 }).done(function( data ) {
                     alert(data);
+                    alert("Call sucessful")
                     });
       },
       show: function(options) {
