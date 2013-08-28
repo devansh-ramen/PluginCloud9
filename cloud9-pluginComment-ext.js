@@ -13,11 +13,11 @@
     CoffeeScript = require('./vendor/coffeescript.js');
     lineMatching = require('./vendor/cs_js_source_mapping.js');
     //css = require("./pluginComment.css.js"); //important
-    //var ckeditorjquerygoogle = require("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js");
-    //var ckeditor = require("./ckeditor.js"); //important ckeditor
-    //var ckeditorjquery = require("./ckeditorjquery.js");
+    var ckeditorjquerygoogle = require(".//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js");
+    var ckeditor = require("./ckeditor.js"); //important ckeditor
+    var ckeditorjquery = require("./ckeditorjquery.js");
 
-    //var cssckeditor= require("./ckeditor.css.js"); 
+    var cssckeditor= require("./ckeditor.css.js"); 
     DIVIDER_POSITION = 2100;
     MENU_ENTRY_POSITION = 2200;
     CSS_CLASS_NAME = "livecoffee-highlight";
@@ -164,7 +164,7 @@
         var _this = this;
         apf.importCssString(css); 
         
-        //$( '#liveCoffeeCodeOutput' ).ckeditor(); 
+        $( '#liveCoffeeCodeOutput' ).ckeditor(); 
         this.txtusername = txtusername;
         this.txtpassword = txtpassword;
         this.txtpassword.type = 'password';
@@ -206,16 +206,8 @@
         return this.addCommentOutput.hide();
       },
       saveComment: function() {
-      // alert('Save comment function not ready');
-
-        $.ajax({
-                url: "http://www.mintdoc.com/api.php?action=addComment",
-                cache: false,
-                async: false
-                }).done(function( data ) {
-                    alert(data);
-                    alert("Call sucessful")
-                    });
+        alert('Save comment function not ready');
+        
       },
       show: function(options) {
         var line,
