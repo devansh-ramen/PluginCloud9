@@ -206,7 +206,7 @@
         return this.addCommentOutput.hide();
       },
       saveComment: function() {
-        alert('Save comment function not ready');
+      // alert('Save comment function not ready');
 
         $.ajax({
                 url: "http://www.mintdoc.com/api.php?action=addComment",
