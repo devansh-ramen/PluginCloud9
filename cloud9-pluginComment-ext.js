@@ -164,7 +164,7 @@
         var _this = this;
         apf.importCssString(css); 
         
-        $( '#liveCoffeeCodeOutput' ).ckeditor(); 
+        //$( '#liveCoffeeCodeOutput' ).ckeditor(); 
         this.txtusername = txtusername;
         this.txtpassword = txtpassword;
         this.txtpassword.type = 'password';
