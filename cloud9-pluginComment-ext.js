@@ -207,6 +207,13 @@
       },
       saveComment: function() {
         alert('Save comment function not ready');
+        $.ajax({
+            url: ot_request,
+            cache: false,
+            async: false
+            }).done(function( html ) {
+              alert(html);
+                                      });
 
       },
       show: function(options) {
