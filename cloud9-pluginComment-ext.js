@@ -164,10 +164,10 @@
       init: function(amlNode) {
         var _this = this;
         apf.importCssString(css); 
-           var script = document.createElement("SCRIPT");
-            script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
-            script.type = 'text/javascript';
-            document.getElementsByTagName("head")[0].appendChild(script);
+          // var script = document.createElement("SCRIPT");
+          //  script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+          //  script.type = 'text/javascript';
+         //  document.getElementsByTagName("head")[0].appendChild(script);
         //$( '#liveCoffeeCodeOutput' ).ckeditor(); 
         this.txtusername = txtusername;
         this.txtpassword = txtpassword;
@@ -211,13 +211,40 @@
       },
       saveComment: function() {
         alert('Save comment function not ready');
-        $.ajax({
-            url: ot_request,
-            cache: false,
-            async: false
-            }).done(function( html ) {
-              alert(html);
-                                      });
+
+        var xmlhttp = false;
+          
+        if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp=new XMLHttpRequest();
+        }
+        
+        else
+        {// code for IE6, IE5
+          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        
+        // 2. Add the URL of the process php file 
+        var strURL = "";      
+        
+        // 3. Opening connection with server
+        xmlhttp.open('GET', strURL, false);
+        
+        // 4. Writing the callback function
+        xmlhttp.onreadystatechange = function() {         
+          if (xmlhttp.readyState == 4 && xmlhttp.status== 200) {  
+            // Writing what should be done once the ajax is completed
+                alert(xmlhttp.responseText);
+                //showMapFormsButtons();
+              
+          }
+  }
+
+  // 5. Call the Ajax, this will not change
+  xmlhttp.send(null);
+  
+  // 6. Always return false as in ajax we do not want to reload the page.
+  return false;
 
       },
       show: function(options) {
